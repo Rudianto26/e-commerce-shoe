@@ -1,0 +1,543 @@
+:root {
+  --primary: rgb(152, 105, 255);
+  --secondary: rgb(180, 147, 254);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar start */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar .navbar-logo {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.navbar .navbar-logo img {
+  height: 87px;
+}
+
+.navbar .navbar-nav {
+  flex: 3;
+}
+.navbar .navbar-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar .navbar-nav ul li {
+  padding: 0 1.5rem;
+}
+
+.navbar .navbar-nav ul li a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.navbar .navbar-nav ul li a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav ul li a:hover::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav ul li a:hover::after {
+  transform: scaleX(1);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-extra {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.navbar .navbar-extra a {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.navbar .navbar-extra a:hover {
+  background-color: var(--secondary);
+}
+/* navbar end */
+
+/* hero start */
+.hero {
+  padding-top: 5.5rem;
+  display: flex;
+  height: 100vmin;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.hero .content {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0rem 0rem 4rem;
+}
+
+.hero .content h1 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.hero .content h2 {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.hero .content a {
+  width: 250px;
+  font-size: 1.7rem;
+  display: block;
+  border: 1px solid var(--primary);
+  padding: 1rem 3rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.hero .content a:hover {
+  background-color: var(--secondary);
+}
+
+.hero .banner {
+  flex: 3;
+  background-image: url(asset/hero.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* hero end */
+
+/* advantages start */
+.advantages {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.advantages .card {
+  display: flex;
+  align-items: center;
+}
+
+.advantages .card .logo {
+  background-color: var(--primary);
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.advantages .card .content {
+  padding: 1rem;
+}
+
+.advantages .card .content h1 {
+  font-size: 2rem;
+}
+
+.advantages .card .content h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+/* advantages end */
+
+/* product start */
+.product {
+  margin: 0rem 2rem;
+  padding-top: 5.5rem;
+}
+
+.product .bag-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.product .bag-1 h1 {
+  font-size: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product .bag-1 .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.product .bag-1 .card .card-item {
+  border: 1px solid var(--primary);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.product .bag-1 .card .card-item img {
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.product .bag-1 .card .card-item h1 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.product .bag-1 .card .card-item a {
+  display: block;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.product .bag-1 .card .card-item a:hover {
+  background-color: var(--secondary);
+}
+
+.product .bag-1 .see a {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+}
+
+.product .bag-1 .see a:hover {
+  background-color: var(--secondary);
+}
+
+.product .bag-2 {
+  display: flex;
+}
+
+.product .bag-2 .logo {
+  flex: 3;
+  background-image: url(asset/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product .bag-2 .content {
+  flex: 4;
+  padding: 2rem;
+}
+
+.product .bag-2 .content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.product .bag-2 .content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.product .bag-2 .content a {
+  background-color: var(--primary);
+  padding: 0.5rem 3rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.product .bag-2 .content a:hover {
+  background-color: var(--secondary);
+}
+/* product end */
+
+/* price start */
+.price {
+  margin: 0 2rem;
+  padding-top: 5.5rem;
+}
+
+.price h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.price .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.product .bag-1 .card .card-item {
+  border: 1px solid var(--primary);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.product .bag-1 .card .card-item img {
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.product .bag-1 .card .card-item h1 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.price .card .card-item {
+  border: 1px solid var(--primary);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.price .card .card-item img {
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.price .card .card-item h1 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.price .card .card-item a {
+  display: block;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.price .card .card-item a:hover {
+  background-color: var(--secondary);
+}
+/* price end */
+
+/* about start */
+.about {
+  margin: 0 2rem;
+  padding-top: 5.5rem;
+}
+
+.about .testimony {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.about .say .title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about .say .person {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.about .say .person .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 340px;
+}
+
+.about .say .person .card .img {
+  height: 300px;
+  width: 300px;
+  border: 1px solid var(--primary);
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  background-image: url(asset/person.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about .say .person .card .content h1 {
+  font-size: 2rem;
+}
+
+.about .say .person .card .content h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+/* about end */
+
+/* FAQs start */
+.faq {
+  margin: 0 2rem;
+  padding-top: 5.5rem;
+}
+
+.faq .bag-1 {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.faq .bag-1 h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.faq .bag-1 .input-group {
+  background-color: #fff;
+  width: 550px;
+  padding: 1rem;
+  display: block;
+  border-radius: 10px;
+}
+
+.faq .bag-1 .input-group input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.faq .bag-1 .input-group a {
+  background-color: var(--primary);
+  padding: 0.5rem 0.5rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.faq .bag-1 .input-group a:hover {
+  background-color: var(--secondary);
+}
+
+.faq .bag-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.faq .bag-2 .logo {
+  flex: 1;
+  height: 150px;
+  width: 150px;
+  background-image: url(asset/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.faq .bag-2 .about,
+.faq .bag-2 .connect,
+.faq .bag-2 .support {
+  flex: 1;
+  margin: 0;
+  padding: 1rem;
+}
+
+.faq .bag-2 .about h1,
+.faq .bag-2 .connect h1,
+.faq .bag-2 .support h1 {
+  margin-bottom: 1rem;
+}
+
+.faq .bag-2 .about ul,
+.faq .bag-2 .connect ul,
+.faq .bag-2 .support ul {
+  list-style: none;
+}
+
+.faq .bag-2 .about ul li,
+.faq .bag-2 .connect ul li,
+.faq .bag-2 .support ul li {
+  color: black;
+  margin: 0.5rem 0;
+}
+
+.faq .bag-2 .about ul li a,
+.faq .bag-2 .connect ul li a,
+.faq .bag-2 .support ul li a {
+  color: black;
+}
+
+.faq .bag-2 .about ul li a:hover,
+.faq .bag-2 .connect ul li a:hover,
+.faq .bag-2 .support ul li a:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+  color: #fff;
+  margin: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+}
+/* FAQs end */
+
+/* footer start */
+.footer {
+  background-color: var(--primary);
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer h1 {
+  font-size: 1rem;
+}
+/* footer end */
